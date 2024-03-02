@@ -252,10 +252,15 @@ img:hover {
 
 /* Media queries */
 
-@media screen and (min-width: 375px) {
+@media only screen and (min-width: 375px) {
     .contenedor_de_galeria {
         display: grid;
         justify-content: center;
+    }
+    
+    .contenedor_formulario{
+        margin-top: 100px;
+        margin-bottom: 100px;
     }
 }
     
