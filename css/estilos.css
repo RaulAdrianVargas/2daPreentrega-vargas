@@ -1,0 +1,268 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos del header y navegación */
+.header_nav {
+    font-family: sans-serif;
+    padding: 4vh;
+    height: 100%;
+    background-color: #f9f;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.header_span {
+    background-color: #fff;
+    padding: 5px;
+    color: #2C5D37;
+    font-size: larger;
+    border-radius: 80%;
+}
+
+.header_ul li {
+    display: inline-block;
+}
+
+.header_ul li a {
+    padding: 12px;
+    text-decoration: none;
+    color: #333;
+}
+
+.header_ul li a:hover {
+    font-size: 18px;
+    color: #fff;
+}
+
+.letras_pagina {
+    color: #88edbd;
+}
+
+.letras_offcanvas {
+    color: #4ddb98;
+}
+
+.colormenu {
+    color: #25c279;
+}
+
+/* Estilos del cuerpo de la página */
+.cuerpo_de_la_pagina {
+    background-color: #bcf6d9;
+}
+
+/* Estilos de titulos y subtitulos */
+
+.titulo_principal{
+    text-align: center;
+    padding: 20px;
+}
+
+.subtitulo_index{
+    padding: 20px;
+    text-align: center;
+}
+
+
+/* Estilos del div index */
+.div_index {
+    background-color: #25c279;
+    padding: 10px;
+    margin: 30px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    border-radius: 12px;
+    box-shadow: 0 0 20px #333;
+}
+
+.div_index h3 {
+    margin: 10px 0px;
+    padding: 10px 0px;
+    color: #155237;
+    text-align: center;
+}
+
+.div_index p {
+    margin: 5px;
+    padding: 10px;
+    color: #155237;
+}
+
+
+/* Estilos de la galería de imágenes */
+.contenedor_de_galeria {
+    margin: 10px;
+    padding: 2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.h3-galeria{
+    color: #25c279;
+}
+
+.galeria_h3 {
+    text-align: center;
+    padding: 20px;
+    color: #062d1c;
+}
+
+.grilla {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 32px;
+}
+
+.grilla img {
+    border-radius: 8px;
+    width: 100%;
+    height: auto;
+    box-shadow: 0px 0px 30px #000;
+    transition: .3s;
+}
+
+img:hover {
+    transform: scale(0.9);
+}
+
+/* Estilos del footer */
+.container_footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #198754;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+    color: #062d1c;
+}
+
+.iconos_redes-sociales {
+    font-size: xx-large;
+}
+
+.iconos_redes-sociales a {
+    color: #bcf6d9;
+    padding: 5px;
+}
+
+.iconos_redes-sociales a:hover {
+    color: #fff;
+}
+
+.musica {
+    position: fixed;
+    right: -255px;
+    bottom: 90px;
+    transition: 0.9s;
+    overflow: hidden;
+    color: #bcf6d9;
+}
+
+.musica:hover {
+    position: fixed;
+    right: 5px;
+    bottom: 90px;
+    color: #062d1c;
+}
+
+
+/* Estilos del formulario de contacto */
+
+
+.formulario_contacto{
+    margin: 20px 40px;
+    text-align: center;
+    background-color: #062d1c;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 500px;
+    box-shadow: 0px 0px 20px #000;
+}
+
+#leyenda_formulario{
+    color: #25c279;
+}
+
+.leyenda_formulario{
+    padding: 20px;
+    color: #198754;
+}
+
+
+.formulario_contacto input{
+    color: #25c279;
+    width: 100%;
+    margin: 10px auto;
+    display: block;
+    background-color: transparent;
+    border: none;
+    border-bottom: 4px solid #03130c;
+}
+
+.formulario_contacto input::placeholder{
+    color: #88edbd;
+}
+
+.formulario_contacto textarea{
+    width: 100%;
+    color: #25c279;
+    background-color: transparent;
+    border: none;
+    border-bottom: 4px solid #03130c;
+    resize: none;
+}
+
+.formulario_contacto textarea::placeholder{
+    color: #88edbd;
+}
+
+#boton_envio{
+    background-color: #4ddb98;
+    margin: 10px auto;
+    padding: 7px;
+    border-radius: 7px;
+    border-bottom: #03130c;
+    color: #155237;
+}
+
+
+
+
+/* Media queries */
+
+@media screen and (min-width: 375px) {
+    .contenedor_de_galeria {
+        display: grid;
+        justify-content: center;
+    }
+}
+    
+
+@media screen and (max-width: 425px) {
+    .grilla {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .contenedor_de_galeria {
+        margin-bottom: 250px;
+    }
+
+    main {
+        margin-bottom: 260px; 
+    }
+
+    .form{
+        align-items: center;
+    }
+}
+
