@@ -176,14 +176,28 @@ img:hover {
 
 /* Estilos del formulario de contacto */
 
+.contenedor_formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    margin-top: 50px; 
+    margin-bottom: 50px; 
+}
+
+.cuerpo_del_contacto{
+    background-color: #bcf6d9;
+}
 
 .formulario_contacto{
-    margin: 20px 40px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     text-align: center;
     background-color: #062d1c;
     margin-left: auto;
     margin-right: auto;
-    max-width: 500px;
+    max-width: 400px;
+    border-radius: 8px;
     box-shadow: 0px 0px 20px #000;
 }
 
@@ -252,7 +266,7 @@ img:hover {
     }
 }
 
-@media screen and (min-width: 1024px) {
+@media only screen and (min-width: 1024px) {
     .contenedor_de_galeria {
         margin-bottom: 250px;
     }
@@ -261,8 +275,14 @@ img:hover {
         margin-bottom: 260px; 
     }
 
-    .form{
-        align-items: center;
+    main form{
+        height: auto;
+        width: 80%;
+        max-width: fit-content;    
+    }
+
+    .formulario_contacto{
+        margin-top: 30vh;
     }
 }
 
