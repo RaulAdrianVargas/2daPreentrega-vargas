@@ -160,11 +160,6 @@ img:hover {
 
 /* Estilos youtube */
 
-/* .contenedoryb{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
 
 .seccion-youtube{
     padding: .5em;
@@ -302,29 +297,41 @@ img:hover {
 }
 
 
-
-
-
-
 /* Media queries */
 
-/* @media only screen and (min-width: 1024px) {
-    .contenedor_de_galeria {
-        margin-bottom: 250px;
+@media only screen and (max-width: 300px) {
+
+    h1{
+        font-size: 1.7em;
     }
 
-    main {
-        margin-bottom: 260px; 
+    h2{
+        font-size: 1.5em;
     }
 
-    main form{
-        height: auto;
-        width: 80%;
-        max-width: fit-content;    
+    h3{
+        font-size: 1.2em;
     }
 
-    .formulario_contacto{
-        margin-top: 30vh;
-    }
-} */
 
+    .canales-youtube {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(224px, 1fr));
+    gap: 20px 12px;
+    padding: 2vh;
+    }
+
+    .contenedor-youtube{
+        display: flex;
+        min-width: 100vw;
+        max-width: 1024px;
+        overflow: hidden;
+    }
+    .grilla {
+        padding: 2vh;
+        display: grid;
+        grid-template-columns: repeat( auto-fit, minmax(224px, 1fr));
+        column-gap: 16px;
+        row-gap: 32px;
+    }
+}
