@@ -1,44 +1,29 @@
+/* .montserrat-<uniquifier> {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal; */
+
 /* Estilos generales */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+h1{
+    font-size: 2.5em;
+}
+h2{
+    font-size: 2em;
+}
+h3{
+    font-size: 1.75em;
 }
 
 /* Estilos del header y navegación */
-.header_nav {
-    font-family: sans-serif;
-    padding: 4vh;
-    height: 100%;
-    background-color: #f9f;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-}
-
-.header_span {
-    background-color: #fff;
-    padding: 5px;
-    color: #2C5D37;
-    font-size: larger;
-    border-radius: 80%;
-}
-
-.header_ul li {
-    display: inline-block;
-}
-
-.header_ul li a {
-    padding: 12px;
-    text-decoration: none;
-    color: #333;
-}
-
-.header_ul li a:hover {
-    font-size: 18px;
-    color: #fff;
-}
 
 .letras_pagina {
     color: #88edbd;
@@ -62,11 +47,13 @@
 .titulo_principal{
     text-align: center;
     padding: 20px;
+    color: #062d1c;
 }
 
 .subtitulo_index{
     padding: 20px;
     text-align: center;
+    color: #155237;
 }
 
 
@@ -97,12 +84,12 @@
 
 
 /* Estilos de la galería de imágenes */
-.contenedor_de_galeria {
-    margin: 10px;
-    padding: 2vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.grilla {
+    padding: 2vh;
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(275px, 1fr));
+    column-gap: 16px;
+    row-gap: 32px;
 }
 
 .h3-galeria{
@@ -115,19 +102,16 @@
     color: #062d1c;
 }
 
-.grilla {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 32px;
-}
-
 .grilla img {
+    
     border-radius: 8px;
     width: 100%;
+    max-height: auto ;
     height: auto;
     box-shadow: 0px 0px 30px #000;
     transition: .3s;
 }
+
 
 img:hover {
     transform: scale(0.9);
@@ -142,6 +126,7 @@ img:hover {
     align-items: center;
     padding: 10px;
     color: #062d1c;
+    text-align: center;
 }
 
 .iconos_redes-sociales {
@@ -173,6 +158,75 @@ img:hover {
     color: #062d1c;
 }
 
+/* Estilos youtube */
+
+/* .contenedoryb{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.seccion-youtube{
+    padding: .5em;
+    text-align: center;
+}
+
+.canales-youtube {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px 12px;
+    padding: 2vh;
+}
+
+.contenedor-youtube{
+    display: flex;
+    min-width: 300px;
+    max-width: 1024px;
+    overflow: hidden;
+}
+
+/* Estilos chakras */
+
+.articulo-chakra{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.articulo-chakra h2{
+    text-align: center;
+    padding: 20px;
+}
+
+.articulo-chakra h3{
+    text-align: center;
+    padding: 20px;
+    color: #25c279;
+}
+
+.articulo-chakra p{
+    padding: 12px;
+}
+
+.articulo-chakra img{
+    width: 100%;
+    max-width: 450px;
+    align-self: center;
+}
+
+.articulo-chakra img:hover{
+    transform: none;
+}
+
+.los_siete_chakras{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.los_siete_chakras p{
+    padding: 20px;
+}
 
 /* Estilos del formulario de contacto */
 
@@ -250,28 +304,11 @@ img:hover {
 
 
 
+
+
 /* Media queries */
 
-@media only screen and (min-width: 375px) {
-    .contenedor_de_galeria {
-        display: grid;
-        justify-content: center;
-    }
-    
-    .contenedor_formulario{
-        margin-top: 100px;
-        margin-bottom: 100px;
-    }
-}
-    
-
-@media screen and (max-width: 425px) {
-    .grilla {
-        grid-template-columns: 1fr;
-    }
-}
-
-@media only screen and (min-width: 1024px) {
+/* @media only screen and (min-width: 1024px) {
     .contenedor_de_galeria {
         margin-bottom: 250px;
     }
@@ -289,5 +326,5 @@ img:hover {
     .formulario_contacto{
         margin-top: 30vh;
     }
-}
+} */
 
